@@ -33,7 +33,7 @@ public class DaoUsers {
     	
     
     	
-    	
+    	       //Step2: Establishing a Connection
         return DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
         
              
@@ -53,6 +53,8 @@ public class DaoUsers {
 
         try ( 
         	  Connection conn = getConnection(); 
+        	
+        	  //Step-3: Creating the preparedStatements:	
         	  PreparedStatement stmt = conn.prepareStatement(sql)
         			  
         	) {

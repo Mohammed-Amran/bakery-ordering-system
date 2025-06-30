@@ -58,7 +58,7 @@ public class menuAndGallery {
 //##############################################################################################	
 	
 	
-	/* ----- This method below is STATIC - It must be modified to present the items dynamically from the DB */
+	
 	
 	//This method shows either of breads or deserts items based on the chosen category.
 	@RequestMapping("/categoryController")

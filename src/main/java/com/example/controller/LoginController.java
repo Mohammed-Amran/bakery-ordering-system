@@ -33,6 +33,15 @@ public class LoginController {
 		
 	} //closing brace of the 'accessLoginPage()' method.
 	
+//##########################################################################################	
+	
+	@GetMapping("/forwardToCustomerPage")
+	public String showCustomerPage(HttpServletRequest request) {
+		    
+			
+		    return "view/customer";
+		}
+	
 	
 //##############################################################################################	
 	
@@ -174,7 +183,7 @@ public class LoginController {
 			     	 
 			     	 //--------------------------------------------------------------------
 			     	 
-		        	 destination = "view/customer";
+		        	 destination = "redirect:/forwardToCustomerPage";
 		        	 
 		    		
 				} 
@@ -203,7 +212,7 @@ public class LoginController {
 			
 		
 		
-	return destination;	
+			return destination;	
 		
 		
 	

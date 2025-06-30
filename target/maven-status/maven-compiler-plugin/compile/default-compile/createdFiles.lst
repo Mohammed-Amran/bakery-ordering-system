@@ -11,7 +11,6 @@ com\example\model\Users.class
 com\example\controller\menuAndGallery.class
 com\example\model\Orders.class
 com\example\controller\ownerController.class
-com\example\filter\NoCacheFilter.class
 com\example\controller\CustomerController.class
 com\example\DAO\DaoOrders.class
 com\example\controller\NotificationsController.class
