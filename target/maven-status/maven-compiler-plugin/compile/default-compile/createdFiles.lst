@@ -13,6 +13,7 @@ com\example\model\Orders.class
 com\example\controller\ownerController.class
 com\example\controller\CustomerController.class
 com\example\DAO\DaoOrders.class
+com\example\controller\IsController.class
 com\example\controller\NotificationsController.class
 com\example\controller\orderController.class
 com\example\controller\ViewPageController.class

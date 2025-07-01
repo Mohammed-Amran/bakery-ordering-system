@@ -316,6 +316,66 @@ public List<Orders> getAllOrders() throws SQLException {
   return 0; // Return 0 if error occurs
 }
 
+//==============================================================================================
+ 
+ 
+ 
+ 
+ public List<Orders> getAllOrdersForIS(LocalDate orderDate) throws SQLException {
+	   
+	 ArrayList<Orders> ordersList = new ArrayList<>();
+
+	    String sql = "SELECT orderId, itemName, selectedQuantity, itemPriceSum, location FROM orders WHERE orderDate = ?";
+
+	    try (Connection conn = getConnection();
+	         
+	    	 PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+	        // Set the LocalDate directly (JDBC handles conversion to SQL DATE)
+	        stmt.setObject(1, orderDate);
+
+	        ResultSet rs = stmt.executeQuery();
+
+	        while (rs.next()) {
+	        	
+	            Orders orderItem = new Orders();
+
+	            orderItem.setOrderId( rs.getInt("orderId") );
+	            
+	            orderItem.setItemName(rs.getString("itemName"));
+	            
+	            orderItem.setSelectedQuantity( rs.getInt("selectedQuantity") );
+	            
+	            orderItem.setItemPriceSum( rs.getInt("itemPriceSum") );
+	            
+	            orderItem.setLocation( rs.getString("location") );
+	              
+	            orderItem.setOrderDate(orderDate); // Optional
+
+	            
+	            
+	            ordersList.add(orderItem);
+	            
+	        }
+	        
+	    }
+
+	    
+	    return ordersList;
+	    
+	}//closing brace of the 'getAllOrdersForAnalytics()' method.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
 	
