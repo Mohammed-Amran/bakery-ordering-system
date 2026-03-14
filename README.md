@@ -1,4 +1,4 @@
-# Bakery Ordering System
+# Bakery Ordering System 🥖🍰
 A Web app bakery ordering system built using Java (Spring Boot Framework) and Mysql.
 
 
