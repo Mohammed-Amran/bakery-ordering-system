@@ -16,7 +16,6 @@ A Web app bakery ordering system built using Java (Spring Boot Framework) and My
 - tomcat server
 - Mysql 
 
-## Screenshots
 
 ## How to Run the Web App
 1. Clone the repository into a folder.
