@@ -14,7 +14,27 @@ A Web app bakery ordering system built using Java (Spring Boot Framework) and My
 - Java
 - Spring Boot
 - tomcat server
-- Mysql 
+- Mysql
+
+## Screenshots
+
+![View Page](screenshots/viewpage.png)
+
+![Login Screen](screenshots/login.png)
+
+![Home Screen](screenshots/home1.png)
+
+![Home Screen](screenshots/home2.png)
+
+![Add to Cart Screen](screenshots/addtocart.png)
+
+![Cart Screen](screenshots/cart.png)
+
+![Checkout Screen](screenshots/checkout.png)
+
+![Orders Screen](screenshots/orders.png)
+
+![Notifications Screen](screenshots/notifications.png)
 
 
 ## How to Run the Web App
